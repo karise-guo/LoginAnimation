@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C538A4031EF3E03A00A813A4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C538A4021EF3E03A00A813A4 /* MainViewController.m */; };
 		C59A32421EF281E900DE8E59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A32411EF281E900DE8E59 /* main.m */; };
 		C59A32451EF281E900DE8E59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A32441EF281E900DE8E59 /* AppDelegate.m */; };
-		C59A32481EF281E900DE8E59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A32471EF281E900DE8E59 /* ViewController.m */; };
+		C59A32481EF281E900DE8E59 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A32471EF281E900DE8E59 /* LoginViewController.m */; };
 		C59A324D1EF281E900DE8E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59A324C1EF281E900DE8E59 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C538A4011EF3E03A00A813A4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C538A4021EF3E03A00A813A4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C59A323D1EF281E900DE8E59 /* LoginAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59A32411EF281E900DE8E59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C59A32431EF281E900DE8E59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C59A32441EF281E900DE8E59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C59A32461EF281E900DE8E59 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C59A32471EF281E900DE8E59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C59A32461EF281E900DE8E59 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C59A32471EF281E900DE8E59 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C59A324C1EF281E900DE8E59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C59A32511EF281E900DE8E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,8 +59,10 @@
 			children = (
 				C59A32431EF281E900DE8E59 /* AppDelegate.h */,
 				C59A32441EF281E900DE8E59 /* AppDelegate.m */,
-				C59A32461EF281E900DE8E59 /* ViewController.h */,
-				C59A32471EF281E900DE8E59 /* ViewController.m */,
+				C59A32461EF281E900DE8E59 /* LoginViewController.h */,
+				C59A32471EF281E900DE8E59 /* LoginViewController.m */,
+				C538A4011EF3E03A00A813A4 /* MainViewController.h */,
+				C538A4021EF3E03A00A813A4 /* MainViewController.m */,
 				C59A32401EF281E900DE8E59 /* Supporting Files */,
 			);
 			path = LoginAnimation;
@@ -143,9 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C59A32481EF281E900DE8E59 /* ViewController.m in Sources */,
+				C59A32481EF281E900DE8E59 /* LoginViewController.m in Sources */,
 				C59A32451EF281E900DE8E59 /* AppDelegate.m in Sources */,
 				C59A32421EF281E900DE8E59 /* main.m in Sources */,
+				C538A4031EF3E03A00A813A4 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +291,7 @@
 				C59A32561EF281E900DE8E59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

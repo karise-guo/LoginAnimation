@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +28,9 @@
     [self.window makeKeyAndVisible];
     
     /* 设置根视图 */
-    self.window.rootViewController = [[ViewController alloc] init];
+    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    self.window.rootViewController = navigationController;
     
     return YES;
 }
