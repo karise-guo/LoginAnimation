@@ -167,6 +167,7 @@ CGFloat const normalAnimationDuration = 0.3; // 默认动画时间
     self.passwordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     self.passwordTextField.enabled = NO;
     self.passwordTextField.delegate = self;
+    self.passwordTextField.secureTextEntry = YES;
     [self.view addSubview:self.passwordTextField];
     
     /* 登录按钮 */
