@@ -61,8 +61,17 @@ CGFloat const normalAnimationDuration = 0.3; // 默认动画时间
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = kBlueColor; // 背景颜色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent; // 状态栏
+    
+    /* 设置导航栏 */
     self.title = @"登录";
-    self.view.backgroundColor = kBlueColor;
+    [[[self.navigationController.navigationBar subviews] objectAtIndex:0] setAlpha:0];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+    backItem.title = @"返回";
+    self.navigationItem.backBarButtonItem = backItem;
     
     /* 初始化视图 */
     [self initViews];
@@ -72,16 +81,6 @@ CGFloat const normalAnimationDuration = 0.3; // 默认动画时间
     
     /* 增加监听（当键盘退出时） */
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-}
-
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    /* 设置导航栏 */
-    [[[self.navigationController.navigationBar subviews] objectAtIndex:0] setAlpha:0];
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 
 
@@ -391,6 +390,7 @@ CGFloat const normalAnimationDuration = 0.3; // 默认动画时间
  */
 - (void)loginAction {
     
+    [self.view endEditing:YES];
     [self startButtonAnimation:YES]; // 开始登录按钮的动画
 }
 
